@@ -10,7 +10,6 @@
     font-family: 'Poppins';
     list-style: none;
     text-decoration: none;
-    cursor: pointer;
     outline: none;
 }
 
@@ -21,6 +20,7 @@
 
 button {
     border: none;
+    cursor: pointer;
 }
 
 .bars {
