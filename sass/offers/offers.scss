@@ -1,0 +1,121 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+%title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFF;
+}
+
+%subtitle {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+%bg-main {
+    background-color:  #1F2E35;
+}
+
+%btn__global {
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.offers {
+    background: #22343D;
+    padding: 40px 20px;
+    @extend %flex-column;
+    gap: 90px;
+}
+
+.offers__title {
+    @extend %title;
+    max-width: 560px;
+}
+
+.offers__items {
+    @extend %flex-center;
+    gap: 200px;
+}
+
+.offers__item {
+    width: 250px;
+    @extend %flex-column;
+    text-align: center;
+    gap: 15px;
+    .offers__item-img {
+        width: 150px;
+        height: 150px;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .offers__item-title {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 116.667% */
+    }
+    .offers__item-txt {
+        width: 200px;
+        @extend %subtitle;
+    }
+    .offers__item-bottom {
+        @extend %subtitle;
+    }
+}
+
+.scard {
+    width: 100%;
+    @extend %flex-center;
+    padding: 150px 20px;
+    @extend %bg-main;
+}
+
+.card {
+    @extend %flex-center;
+    max-width: 970px;
+    min-height: 350px;
+    border-radius: 32px;
+    background: #02897A;
+    padding: 20px;
+    .card__img {
+        max-width: 350px;
+        img {
+            width: 100%;
+        }
+    }
+    .card__text {
+        @extend %flex-column;
+        align-items: start;
+        gap: 70px;
+    }
+    .card__title {
+        @extend %title;
+        text-align: left;
+        max-width: 470px;
+    }
+}
+

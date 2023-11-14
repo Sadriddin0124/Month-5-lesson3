@@ -1,0 +1,138 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+%title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFF;
+}
+
+%subtitle {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+%bg-main {
+    background-color:  #1F2E35;
+}
+
+%btn__global {
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+
+.navbar {
+    padding: 20px;
+    @extend %flex-center;
+    justify-content: space-around;
+    @extend %bg-main;
+}
+
+.nav__logo {
+    @extend %flex-center;
+    gap: 16px;
+}
+.nav__text {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px; /* 93.333% */
+}
+
+.nav__list {
+    @extend %flex-center;
+    gap: 24px;
+    .nav__links {
+        color: #fff;
+    }
+}
+
+.btn__global {
+    @extend %btn__global
+}
+
+.btn__trans {
+    border: 1px solid #BCD0E5;
+    background: transparent;
+    color: #fff;
+}
+
+.btn__green {
+    background: #02897A;
+    color: #fff;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header {
+    @extend %flex-column;
+    gap: 50px;
+    width: 100%;
+    padding: 120px 20px;
+    @extend %bg-main;
+}
+
+.header__title {
+    @extend %title;
+}
+
+.header__clients {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 64px;
+    min-height: 90px;
+    max-width: 850px;
+    // gap: 64px;
+}
+
+.header__client {
+    width: 160px;
+    height: 50px;
+    .client1 {
+        width: 160px;
+        height: 50px;
+    }
+    .client2 {
+        width: 146px;
+        height: 50px;
+    }
+    .client3 {
+        width: 215px;
+        height: 45px;
+    }
+    .client4 {
+        width: 140px;
+        height: 42px;
+        margin-left: 60px;
+    }
+}
