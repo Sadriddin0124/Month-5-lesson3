@@ -34,6 +34,8 @@
 }
 
 .navbar {
+  width: 100%;
+  position: fixed;
   padding: 20px;
   justify-content: space-around;
 }
@@ -80,7 +82,7 @@
 .header {
   gap: 50px;
   width: 100%;
-  padding: 120px 20px;
+  padding: 160px 20px 120px;
 }
 
 .header__clients {

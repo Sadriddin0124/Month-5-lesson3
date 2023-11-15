@@ -44,6 +44,8 @@
 
 
 .navbar {
+    width: 100%;
+    position: fixed;
     padding: 20px;
     @extend %flex-center;
     justify-content: space-around;
@@ -98,7 +100,7 @@
     @extend %flex-column;
     gap: 50px;
     width: 100%;
-    padding: 120px 20px;
+    padding: 160px 20px 120px;
     @extend %bg-main;
 }
 
